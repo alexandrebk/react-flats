@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import FLat from './flat.jsx'
+import Flat from './flat.jsx'
 
 class FlatList extends Component {
   renderList = () => {

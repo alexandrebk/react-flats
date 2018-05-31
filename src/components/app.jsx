@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import FLat from './flat.jsx';
-import FLatList from './flat_list.jsx';
+import Flat from './flat.jsx';
+import FlatList from './flat_list.jsx';
+import SimpleMap from './simple_map.jsx';
 import flats from '../../data/flats'
 
 class App extends Component {
@@ -17,10 +18,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="left-scene">
+        <div className="flat-list">
           <FlatList flats={flats} />
         </div>
-        <div className="right-scene">
+        <div className="map-container" style={{ height: '100vh', width: '100%' }}>
+          <SimpleMap />
         </div>
       </div>
     );
